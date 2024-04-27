@@ -31,81 +31,40 @@
 &nbsp;&nbsp;&nbsp;&nbsp;A entidade Usuários relaciona-se com a entidade Formulário 0, sendo que para um usuário pode haver várias respostas (é possível responder novamente após determinado período de tempo); portanto, as relações são 1:N. Ademais, a entidade Formulário 0 relaciona-se com as entidades Formulário 1, Formulário 2, Formulário 3 e Formulário 4, sendo que para cada vez que o Formulário 0 é preenchido é possível responder apenas uma vez a algum dos demais formulários; logo, a relação é 1:1.
 
 - ### Controladores (Controllers):
-- Tela do Administrador <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Liste os controladores do seu projeto e suas responsabilidades.
-<div align="center">
-<sub>Qaudro 2 - Controllers</sub>
-</div>
+- #### Usuários <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Realiza o fluxo de dados das views de cadastro e de login para a entidade Usuários. Seus métodos são Listar, Gravar, Procurar e Deletar, os quais agem sobre os dados recebidos do usuário a fim de atualizar o banco de dados.
 
-<div align="center">
+- #### Tela do Administrador <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Realiza o fluxo de dados da views de administrador para o banco de dados completo. Seus métodos são Listar, Gravar, Procurar e Deletar, os quais agem sobre os dados recebidos do usuário a fim de atualizar o banco de dados e leem os dados já gravados a fim de os disponibilizar ao usuário.
 
-| Methods | Parâmetros |
-| ------- | -------- |
-| Texto   | Texto    |
-| Texto   | Texto    |
-| Texto   | Texto    |
-
-</div>
-
-<div align="center">
-<sup>Fonte: Material produzido pela autora (2024)</sup>
-</div>
-
-Descreva as ações (methods) de cada controlador e seus parâmetros de entrada e saída.
-&nbsp;&nbsp;&nbsp;&nbsp;Explique como os controladores interagem com os modelos e views.
-- Tela do Administrador <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Liste os controladores do seu projeto e suas responsabilidades.
-<div align="center">
-<sub>Qaudro 2 - Controllers</sub>
-</div>
-
-<div align="center">
-
-| Methods | Parâmetros |
-| ------- | -------- |
-| Texto   | Texto    |
-| Texto   | Texto    |
-| Texto   | Texto    |
-
-</div>
-
-<div align="center">
-<sup>Fonte: Material produzido pela autora (2024)</sup>
-</div>
-
-Descreva as ações (methods) de cada controlador e seus parâmetros de entrada e saída.
-&nbsp;&nbsp;&nbsp;&nbsp;Explique como os controladores interagem com os modelos e views.
-
-- Tela do Administrador <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Liste os controladores do seu projeto e suas responsabilidades.
-<div align="center">
-<sub>Qaudro 2 - Controllers</sub>
-</div>
-
-<div align="center">
-
-| Methods | Parâmetros |
-| ------- | -------- |
-| Texto   | Texto    |
-| Texto   | Texto    |
-| Texto   | Texto    |
-
-</div>
-
-<div align="center">
-<sup>Fonte: Material produzido pela autora (2024)</sup>
-</div>
-
-Descreva as ações (methods) de cada controlador e seus parâmetros de entrada e saída.
-&nbsp;&nbsp;&nbsp;&nbsp;Explique como os controladores interagem com os modelos e views.
+- #### Formulário <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Realiza o fluxo de dados das views de formulário para as entidades correspondentes. Seus métodos são Listar, Gravar, Procurar e Deletar, os quais agem sobre os dados recebidos do usuário a fim de atualizar o banco de dados.
 
 - ### Views (Views):
-&nbsp;&nbsp;&nbsp;&nbsp;Liste as views do seu projeto e sua função.
+
+<div align="center">
+<sub>Quadro 2 - Views</sub>
+</div>
+
+<div align="center">
+
+| View | Função |
+| ------- | -------- |
+| Homepage   | Disponibiliza as informações sobre o projeto, além de um botão que direciona o usuário à tela de cadastro.    |
+| Login   | Apresenta os campos a serem preenchidos pelo usuário a fim de acessar o formulário no status correto para ele.    | 
+| Cadastrar-se   | Apresenta os campos a serem preenchidos para a criação de um novo usuário.    | 
+| Tela Administrador   | Tela em que são dispostos alguns dos dados e onde é possível baixá-los em sua totalidade ou em partes.     | 
+| Formulário 0, Formulário 1, Formulário 2, Formulário 3, Formulário 4    | Possui os enunciados e os campos para respostas das perguntas do questionário.    | 
+
+</div>
+
+<div align="center">
+<sup>Fonte: Material produzido pela autora (2024)</sup>
+</div>
 
 - #### Infraestrutura:
-&nbsp;&nbsp;&nbsp;&nbsp;Descreva os componentes de infraestrutura do seu projeto, como bancos de dados, APIs externas e outras dependências.
-Explique como a infraestrutura se integra à arquitetura MVC.
-Justifique as escolhas feitas e como elas impactam o projeto.
+&nbsp;&nbsp;&nbsp;&nbsp;Os dados da aplicação serão armazenados em um Banco de Dados PostgreSQL, o qual será conectado à camada Model da arquitetura MVC, ao disponibilizar a essa camada os dados estruturados nela. Para que o usuário acesse a camada View, ele utilizará um browser, o que facilita o acesso, por ser uma ferramenta comumente disponível e por não precisar realizar a instalação de aplicações extras.
 
 - #### Implicações da Arquitetura:
-&nbsp;&nbsp;&nbsp;&nbsp;Descreva as implicações da arquitetura em termos de escalabilidade, manutenção, testabilidade e outros aspectos importantes.
+&nbsp;&nbsp;&nbsp;&nbsp;A utilização da arquitetura MVC facilita a organização do código, o que torna a manutenção mais fácil, pois cada parte do projeto tem sua responsabilidade claramente definida.
+
