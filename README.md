@@ -1,3 +1,22 @@
+<div align="center">
+<sub>Figura 1 - Parte 1</sub>
+<img src="arquiteturaUm.drawio.png" width="100%">
+<sup>Fonte: Material produzido pela autora (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 2 - Parte 2</sub>
+<img src="DiagramaDois.drawio.png" width="100%">
+<sup>Fonte: Material produzido pela autora (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 3 - Parte 3</sub>
+<img src="DiagramaTres.drawio.png" width="100%">
+<sup>Fonte: Material produzido pela autora (2024)</sup>
+</div>
+
+
 
 # Abadono Zero
 
